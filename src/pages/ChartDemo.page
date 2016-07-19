@@ -1,0 +1,5 @@
+<apex:page controller="ChartDemo">
+    <apex:chart height="250" width="300" data="{!pieData}">
+    	<apex:pieSeries labelField="name" dataField="numValue"/>
+	</apex:chart>
+</apex:page>

@@ -1,0 +1,25 @@
+<apex:page showHeader="false" sidebar="false" controller="JSEncodeFW" standardStylesheets="false">
+    <h1>
+        JsEncode demo
+    </h1>
+    <br/>
+    	Account name :
+    <div id ="AccountNameDiv">
+    </div>
+    <script>
+    	var accountName = '{!JSENCODE(someAccount.Name)}';
+    document.getElementById("AccountNameDiv").innerHTML = accountName;
+    </script>
+    
+    <!-- Testing compound conditions -->
+    <apex:outputPanel rendered="{! OR( AND(accountList1 != null , accountList1.size > 0 ) , AND(accountList2 != null , accountList2.size > 0) )}">
+         Test block 1 
+    </apex:outputPanel>
+    
+    <!-- The above condition can also be written as -->
+    
+    <apex:outputPanel rendered="{! ( accountList1 != null && accountList1.size > 0 ) || (accountList2 != null && accountList2.size > 0)}">
+         Test block 2
+    </apex:outputPanel>
+    
+</apex:page>

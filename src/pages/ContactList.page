@@ -1,0 +1,7 @@
+<apex:page standardController="Contact" recordSetVar="contacts">
+    <apex:dataTable value="{!Contacts}" var="c">
+        <apex:column value="{!c.FirstName}"/>
+        <apex:column value="{!c.LastName}"/>
+        <apex:column value="{!c.email}"/>
+    </apex:dataTable>
+</apex:page>

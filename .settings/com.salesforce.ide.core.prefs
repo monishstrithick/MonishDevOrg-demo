@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+endpointApiVersion=35.0
+endpointEnvironment=Production/Developer Edition
+endpointServer=www.salesforce.com
+httpsProtocol=true
+ideVersion=35.0
+keependpoint=false
+metadataFormatVersion=35.0
+namespacePrefix=heatspace
+packageName=unpackaged
+preferToolingDeployment=true
+projectIdentifier=IDE816409101581109962
+readTimeout=400
+username=monish@monish.com

@@ -1,0 +1,15 @@
+<apex:page sidebar="false" showHeader="false" controller="testController">
+    <center>
+        
+    	<apex:form >
+            
+          	<apex:inputText value="{!username}"/>
+            <br/>
+            <apex:inputSecret value="{!password}"/>
+            <apex:commandButton action="{!login}" value="login"/>
+            <apex:messages style="background-color:#006ead !important;color:#fff !important;"/>
+        
+        </apex:form>
+    
+    </center>  
+</apex:page>
